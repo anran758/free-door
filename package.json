@@ -1,0 +1,37 @@
+{
+    "name": "free-door",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.js",
+    "bin": {
+        "free-door": "bin/free-door"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src/",
+        "lint:fix": "eslint --fix src/"
+    },
+    "pre-commit": [
+        "lint:fix",
+        "lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anran758/free-door.git"
+    },
+    "author": "anran758",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/anran758/free-door/issues"
+    },
+    "homepage": "https://github.com/anran758/free-door#readme",
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "handlebars": "^4.1.2",
+        "yargs": "^13.2.2"
+    }
+}
